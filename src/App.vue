@@ -15,8 +15,8 @@ export default {
     };
   },
   async mounted() {
-    const { text } = await (await fetch("/api/message")).json();
-    this.message = text;
+    // const { text } = await (await fetch("/api/message")).json();
+    // this.message = text;
 
     // const formData = {
     //   this.name: 'Eric',
@@ -26,6 +26,7 @@ export default {
     // }
 
     let xhr = new XMLHttpRequest();
+    // xhr.open('POST', '/api/sendmail');
     xhr.open('POST', '/api/sendmail');
     xhr.setRequestHeader('content-type', 'application/json');
     xhr.onload = function(){
