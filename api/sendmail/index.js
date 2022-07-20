@@ -5,7 +5,7 @@ const nodemailer = require("nodemailer");
 // app.use(express.static('public'));
 // app.use(express.json())
 
-module.exports = async function (context, req, res) {
+module.exports = async function (context, req) {
     let transporter = nodemailer.createTransport({
         service: "hotmail",
         // host: "smtp.gmail.com",
